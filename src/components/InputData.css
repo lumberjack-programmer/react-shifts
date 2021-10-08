@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+
+
+.input-name {
+    box-sizing: border-box;
+    background-color: transparent;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 15%;
+    border-radius: 20px;
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 36px;
+    outline: 0;
+    padding: 10px 15px;
+    color: #ffffff;
+    transition-duration: 0.9s;
+    box-shadow: inset 0px 0px 20px -6px rgb(0 0 0 / 25%);
+    border: 0.5;
+    border-color: #4F95FF;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: #333;
+}
+label {
+    color: #333;
+}
+
+.input-name:focus{
+    border: 2px solid #4F95FF;
+    /* transform: scale(1.02); */
+    background-color: #4F95FF;
+}
+
+.button-submit {
+    position: relative;
+    margin: auto;
+    top: 20px;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    border-radius: 25px;
+    min-width: 192px;
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 36px;
+    transition-duration: 0.9s;
+    border: none;
+    background-color: #2d80ff;
+    color: #ffffff;
+
+}
+.button-submit:hover {
+    background-color: #4a94ff;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 1;
+    filter: invert(1);
+  }
+  
+  input[type="date"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }
+
+  input[type="time"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 1;
+    filter: invert(1);
+  }
+  
+  input[type="time"]::-webkit-calendar-picker-indicator:hover {
+    opacity: 1
+  }

@@ -1,0 +1,23 @@
+.input-table__wrapper {
+    position: relative;
+    top: 50px;
+    color: #333;
+    margin-bottom: 60px;
+}
+
+table {
+    border-collapse: collapse;
+    color: #333;
+    width: 100%;
+  }
+  h2 {
+    color: #333;  
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #DDD;
+  }
+  
+  tr:hover {background-color: #D6EEEE;}

@@ -1,0 +1,27 @@
+.button-calculate {
+    position: relative;
+    margin: auto;
+    top: 20px;
+    height: 60px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+    border-radius: 25px;
+    min-width: 192px;
+    font-family: 'Orbitron', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 36px;
+    transition-duration: 0.9s;
+    border: none;
+    background-color: #2d80ff;
+    color: #ffffff;
+
+}
+.button-calculate:hover {
+    background-color: #4a94ff;
+    color: #ffffff;
+    cursor: pointer;
+}

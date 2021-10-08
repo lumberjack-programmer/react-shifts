@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 50px;
+    position: absolute;
+    box-sizing: border-box;
+    width: 80%;
+    left: 0;
+    right: 0;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border: 1px solid #4F95FF;
+    font-size: 20px;
+    /* box-shadow: inset 0px 0px 20px -6px rgb(0 0 0 / 25%); */
+    border-radius: 20px;
+    top: 20px;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+}
