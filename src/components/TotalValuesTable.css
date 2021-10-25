@@ -4,7 +4,6 @@
     color: #333;
     margin-bottom: 60px;
 }
-
 table {
     border-collapse: collapse;
     color: #333;
@@ -12,12 +11,10 @@ table {
   }
   h2 {
     color: #333;  
-  }
-  
+  } 
   th, td {
     padding: 8px;
     text-align: left;
     border-bottom: 1px solid #DDD;
   }
-  
   tr:hover {background-color: #D6EEEE;}

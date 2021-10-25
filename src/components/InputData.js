@@ -6,7 +6,6 @@ const totalValuesCalculated = [{
     overallSalary: 0
 }];
 const InputData = (props) => {
-    
     const [dayEntered, setDayEntered] = useState('');
 
     const [startTimeEntered, setStartTimeEntered] = useState('');
@@ -15,75 +14,43 @@ const InputData = (props) => {
     const [breakStartEntered, setBreakStartEntered] = useState('');
     const [breakFinishEntered, setBreakFinishEntered] = useState('');
 
-
     const [addTotalValues, setTotalValues] = useState(totalValuesCalculated);
-
-
     // const [addStuffButton, setAddStuffButton] = useState('');
-
-    
     const dayChangeHandler = event => {
         setDayEntered(event.target.value);
     };
-
     const startTimeChangeHandler = event => {
         setStartTimeEntered(event.target.value);
     };
-
     const offTimeChangeHandler = event => { 
         setOffTimeEntered(event.target.value);
-
     };
-
     const breakStartChangeHandler = event => {
         setBreakStartEntered(event.target.value);
     };
-
     const breakFinishChangeHandler = event => {
         setBreakFinishEntered(event.target.value);
     };
-
-
-
     const submitHandler = (event) => {
         event.preventDefault();
-  
             const startTime = new Date(dayEntered + ' ' + startTimeEntered);
             const offTime = new Date(dayEntered + ' ' + offTimeEntered);
-
-            
-            
             const breakStartTime = new Date(dayEntered + ' ' + breakStartEntered);
             const breakFinishTime = new Date(dayEntered + ' ' + breakFinishEntered);
           
-
-
            const totalStartMinutes = (startTime.getHours() * 60) + startTime.getMinutes();
            const totalOffMinutes = (offTime.getHours() * 60) + offTime.getMinutes();
-
            const totalStartBreakMinutes = ((breakStartTime.getHours() * 60) + breakStartTime.getMinutes());
            const totalOffBreakMinutes = ((breakFinishTime.getHours() * 60) + breakFinishTime.getMinutes());
-
            const resultHours = Math.floor(((totalOffMinutes - totalStartMinutes) - (totalOffBreakMinutes - totalStartBreakMinutes)) / 60);
            const resultMinutes = (((totalOffMinutes - totalStartMinutes) - (totalOffBreakMinutes - totalStartBreakMinutes)) % 60);
-
            const totalResult = `${resultHours}h ${resultMinutes}m`;
-            
            const totalSalary = `${resultHours * 20 + resultMinutes * 0.33} zl`;
-
            const overallMinutes = (totalOffMinutes - totalStartMinutes) - (totalOffBreakMinutes - totalStartBreakMinutes);
            const overallSalary = resultHours * 20 + resultMinutes * 0.33;
-           
-
            totalValuesCalculated.push(overallMinutes);
            totalValuesCalculated.push(overallSalary);
-
            setTotalValues(totalValuesCalculated);
-           
-     
-        
-
-
         const inputDataObject = {
             id: Math.random().toString(),
             date: dayEntered,
@@ -94,21 +61,13 @@ const InputData = (props) => {
             hours: totalResult,
             salary: totalSalary
         };
-
-
-
         props.onAddInputData(inputDataObject, addTotalValues);
         setDayEntered('');
         setBreakFinishEntered('');
         setBreakStartEntered('');
         setOffTimeEntered('');
         setStartTimeEntered('');
-
-      
     };
-
-    
-
     return (
        <div>
         <form onSubmit={submitHandler}>
@@ -139,8 +98,6 @@ const InputData = (props) => {
             
            <input className="button-submit" type="submit" />
           </form>
-
-
         </div>
     );
 }

@@ -1,13 +1,8 @@
 import React from "react";
 import './InputTable.css';
 
-
-
 const InputTable = (props) => {
-
-
     return (
-
 <div class="input-table__wrapper">
     <h2>Records</h2>
 <table>
@@ -22,13 +17,8 @@ const InputTable = (props) => {
            <td>{element.salary}</td>
        </tr>
     )}
-
 </table>
-
         </div>
     );
-
 };
-
-
 export default InputTable;

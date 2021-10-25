@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import { initializeApp } from "firebase/app";
 
-
 // Use your config values here.
 const firebaseConfig = {
   apiKey: "AIzaSyASThYkqrijoNIzKo7us_UcovDGiJZDHyQ",
@@ -18,8 +17,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
